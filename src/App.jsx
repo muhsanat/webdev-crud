@@ -1,9 +1,9 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
-import firebase from 'firebase/compat/app'; // Import compat version
-import 'firebase/compat/firestore';       // Import compat firestore
-import { firebaseConfig } from './firebaseConfig'; // Your Firebase config
-import './App.css'; // You can create this file for styling
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import { firebaseConfig } from './firebaseConfig';
+import './App.css';
 
 // Initialize Firebase (only if it hasn't been initialized yet)
 if (!firebase.apps.length) {
@@ -51,7 +51,7 @@ function App() {
         completed: false,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       });
-      setTaskInput(''); // Clear input field
+      setTaskInput(''); // Clear input field after adding task
     } catch (error) {
       console.error("Error adding task: ", error);
     }

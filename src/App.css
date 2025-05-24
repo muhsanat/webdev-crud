@@ -77,7 +77,7 @@ li.completed span {
 
 li span {
   flex-grow: 1;
-  cursor: pointer; /* To indicate it's clickable for toggling complete */
+  cursor: pointer; 
 }
 
 .task-actions button {
